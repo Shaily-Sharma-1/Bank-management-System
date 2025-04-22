@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bank Management System</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container card" id="login-section">
+    <h2>🔐 Bank Login</h2>
+    <input type="text" id="username" placeholder="👤 Username" />
+    <input type="password" id="password" placeholder="🔑 Password" />
+    <button class="btn primary" onclick="login()">Login</button>
+    <p id="login-msg" class="error-msg"></p>
+  </div>
+
+  <div class="container hidden card" id="dashboard-section">
+    <h2>👋 Welcome, <span id="user-name"></span></h2>
+    <p><strong>Account No:</strong> <span id="account-no"></span></p>
+    <p><strong>Current Balance:</strong> $<span id="balance"></span></p>
+
+    <div class="section">
+      <h3>💸 Transfer Money</h3>
+      <select id="recipient-select"></select>
+      <input type="number" id="transfer-amount" placeholder="💰 Amount" />
+      <button class="btn success" onclick="transferMoney()">Transfer</button>
+      <p id="transfer-msg" class="success-msg"></p>
+    </div>
+
+    <div class="section">
+      <h3>📥 Deposit</h3>
+      <input type="number" id="deposit-amount" placeholder="💰 Amount" />
+      <button class="btn info" onclick="depositMoney()">Deposit</button>
+      <p id="deposit-msg" class="success-msg"></p>
+    </div>
+
+    <div class="section">
+      <h3>📤 Withdraw</h3>
+      <input type="number" id="withdraw-amount" placeholder="💰 Amount" />
+      <button class="btn warning" onclick="withdrawMoney()">Withdraw</button>
+      <p id="withdraw-msg" class="success-msg"></p>
+    </div>
+
+    <div class="section">
+      <h3>📜 Passbook</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>To/From</th>
+            <th>Balance</th>
+          </tr>
+        </thead>
+        <tbody id="passbook"></tbody>
+      </table>
+    </div>
+
+    <button class="btn danger" onclick="logout()">🚪 Logout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

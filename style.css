@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+  
+  h2, h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn {
+    transition: background 0.3s;
+  }
+  
+  .primary {
+    background-color: #4c51bf;
+    color: white;
+  }
+  
+  .primary:hover {
+    background-color: #434190;
+  }
+  
+  .success {
+    background-color: #38a169;
+    color: white;
+  }
+  
+  .success:hover {
+    background-color: #2f855a;
+  }
+  
+  .info {
+    background-color: #3182ce;
+    color: white;
+  }
+  
+  .info:hover {
+    background-color: #2b6cb0;
+  }
+  
+  .warning {
+    background-color: #dd6b20;
+    color: white;
+  }
+  
+  .warning:hover {
+    background-color: #c05621;
+  }
+  
+  .danger {
+    background-color: #e53e3e;
+    color: white;
+  }
+  
+  .danger:hover {
+    background-color: #c53030;
+  }
+  
+  .error-msg {
+    color: #e53e3e;
+    text-align: center;
+  }
+  
+  .success-msg {
+    color: #38a169;
+    text-align: center;
+  }
+  
+  .section {
+    margin: 30px 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  thead {
+    background-color: #4c51bf;
+    color: white;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
